@@ -29,14 +29,15 @@ body{
 	
 }
 
-/*#selecao-player img:hover{
+#selecao-player img:hover{
 	background-color: yellow;
-}*/
+}
 
 
 #iniciar{
 	text-align: center;
-	padding: 5px;
+
+	padding: 10px;
 	border-radius: 15px;
 	font-size: 35px;
 	background-color: yellow;
@@ -47,11 +48,3 @@ body{
 }
 
 
-.selecionado{
-	background-color: yellow;
-}
-
-.excluido-selecao{
-	filter: blur(2px);
-	background-color: grey;
-}
