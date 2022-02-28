@@ -1,0 +1,50 @@
+/*PAGINA DE SELEÇÃO DE JOGADORES*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'FontePoke';
+}
+@font-face{
+	font-family:'FontePoke';
+	src: url('GrinchedRegular.otf');
+}
+
+body{
+	background-color: slateblue;
+}
+#selecao-player{
+	text-align: center;
+	width: 70%;
+	
+	margin: auto;
+	padding-top: 50px;
+}
+
+#selecao-player img{
+	cursor: pointer;
+	
+	border-radius: 90px;
+	
+}
+
+#selecao-player img:hover{
+	background-color: yellow;
+}
+
+
+#iniciar{
+	text-align: center;
+	
+	padding: 5px;
+	border-radius: 15px;
+	font-size: 35px;
+	background-color: yellow;
+	color: slateblue;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
