@@ -84,6 +84,24 @@ main{
 
 }
 
+@media screen and (max-width: 1000px) and (orientation: landscape){
+
+		.row{
+	min-width: 500px;
+	
+	
+		}
+
+	.square{
+	width: 110px;
+	height: 110px;
+		}
+
+
+}
+
+
+
 
 @media screen and (max-width: 650px){
 
@@ -96,6 +114,22 @@ main{
 	.square{
 	width: 130px;
 	height: 130px;
+		}
+
+
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape){
+
+		.row{
+	min-width: 400px;
+	
+	
+		}
+
+	.square{
+	width: 110px;
+	height: 110px;
 		}
 
 
