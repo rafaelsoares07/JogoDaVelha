@@ -69,3 +69,15 @@ function isWin(){
 
 	return false;
 }
+
+
+
+
+function reset(){ 
+	
+location.reload();
+
+
+}
+
+

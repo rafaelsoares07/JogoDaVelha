@@ -24,7 +24,9 @@ function handleClick(event){
 	if(handMove(position)){
 
 		setTimeout(()=>{
-			alert('O JOGO ACABOU, o vencedor foi'+playerTime)
+			var telaGameOver = document.querySelector('#gameOver')
+
+			telaGameOver.style.visibility = 'visible';
 
 		},50);
 		
