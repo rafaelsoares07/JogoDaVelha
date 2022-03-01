@@ -1,7 +1,7 @@
-import{x1} from 'selecao-dos-personagen.js'
 
-var jogador1 = x1;
-var jogador2 = x1;
+
+var jogador1 = 'imgs/bubasauro.png'
+var jogador2 = 'imgs/picachu.png'
 
 
 let squares = document.querySelectorAll('.square')
@@ -16,6 +16,7 @@ function handleClick(event){
 	let square = event.target;
 	let position = square.id;
 
+	
 	handMove(position);
 
 	updateSquares();
@@ -29,12 +30,13 @@ squares.forEach((square) =>{
 	let position = square.id
 	let symbols = board[position];
 
-	if(symbols == 'o'){
+	
+	if (symbols == 'o'){
 		square.innerHTML = `<div><img src='${jogador1}'></div>`
 
 	}
 
-	if (symbols == 'x'){
+	else if(symbols == 'x'){
 		square.innerHTML = `<div><img src='${jogador2}'></div>`
 	}
 })

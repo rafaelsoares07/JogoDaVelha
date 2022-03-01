@@ -6,13 +6,27 @@ let symbols = ['o','x']
 
 
 function handMove(position){
-	board[position] = symbols[playerTime];
 
-	if(playerTime == 0){
-		playerTime = 1;
+	if(board[position]=='x'){
+		return;
+	}
+	else if(board[position]=='o'){
+		return;
 	}
 
 	else{
-		playerTime =0; 
+	
+		board[position] = symbols[playerTime];
+
+		if(playerTime == 0){
+			playerTime = 1;
+		}
+
+		else{
+			playerTime =0; 
+		}
 	}
+	
+
+	
 }
