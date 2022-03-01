@@ -17,7 +17,14 @@ function handleClick(event){
 	let position = square.id;
 
 	
-	handMove(position);
+	if(handMove(position)){
+
+		setTimeout(()=>{
+			alert('O JOGO ACABOU, o vencedor foi'+playerTime)
+
+		},50);
+		
+	}
 
 	updateSquares();
 }
