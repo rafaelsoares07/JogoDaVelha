@@ -54,4 +54,5 @@ body{
 .excluido-selecao{
 	filter: blur(2px);
 	background-color: grey;
+	pointer-events: none;
 }
