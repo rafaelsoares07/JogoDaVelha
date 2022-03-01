@@ -32,6 +32,10 @@
 
 			let x = item.getAttribute("src")
 			
+			localStorage.setItem('name1',x)
+
+
+
 			let y = "p1"
 			console.log(x)
 			excluirOpcao(x,y)
@@ -52,6 +56,8 @@
 
 
 			let x = item.getAttribute("src")
+			
+			localStorage.setItem('name2',x)
 			
 			let y = "p2"
 			console.log(x)
@@ -96,3 +102,6 @@
 				}
 			
 		}
+
+		n = localStorage.getItem('link')
+		console.log(n)

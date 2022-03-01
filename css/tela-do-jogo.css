@@ -5,6 +5,7 @@
 	
 	
 	
+	
 }
 body{
 	background-color: slateblue;
@@ -39,6 +40,10 @@ main{
 	background-color: yellow;
 
 
+}
+
+.ajuste-tabuleiro{
+	position: absolute;
 }
 
 .stage img{
@@ -82,6 +87,7 @@ main{
 
 @media screen and (max-width: 650px){
 
+	
 	.row{
 	min-width: 420px;
 	

@@ -1,7 +1,11 @@
+n1 = localStorage.getItem('name1')
+n2 = localStorage.getItem('name2')
 
+		console.log(n1)
+		console.log(n2)
 
-var jogador1 = 'imgs/bubasauro.png'
-var jogador2 = 'imgs/picachu.png'
+var jogador1 = n1
+var jogador2 = n2
 
 
 let squares = document.querySelectorAll('.square')
@@ -39,12 +43,12 @@ squares.forEach((square) =>{
 
 	
 	if (symbols == 'o'){
-		square.innerHTML = `<div><img src='${jogador1}'></div>`
+		square.innerHTML = `<div class="ajuste-tabuleiro"><img src='${jogador1}'></div>`
 
 	}
 
 	else if(symbols == 'x'){
-		square.innerHTML = `<div><img src='${jogador2}'></div>`
+		square.innerHTML = `<div class="ajuste-tabuleiro"><img src='${jogador2}'></div>`
 	}
 })
 }
