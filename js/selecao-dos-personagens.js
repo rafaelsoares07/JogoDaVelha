@@ -1,3 +1,5 @@
+
+
 /*capturas ds elementos e adicao da fun~ção     pode simplificar com for e tirar esses indices ......*/
 		var play1 = document.getElementsByClassName('p1')
 		play1[0].addEventListener('click',clicouP1)
@@ -16,7 +18,7 @@
 		play2[4].addEventListener('click',clicouP2)
 
 
-		function clicouP1(event){
+		  function clicouP1(event){
 			let item = event.target
 			console.log(item)
 
@@ -29,6 +31,7 @@
 			item.classList.add("selecionado")
 
 			let x = item.getAttribute("src")
+			
 			let y = "p1"
 			console.log(x)
 			excluirOpcao(x,y)
@@ -46,7 +49,10 @@
 
 			item.classList.add("selecionado")
 
+
+
 			let x = item.getAttribute("src")
+			
 			let y = "p2"
 			console.log(x)
 			excluirOpcao(x,y)
