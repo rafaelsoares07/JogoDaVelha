@@ -36,7 +36,12 @@ function handleClick(event){
 
 			telaGameOver.style.visibility = 'visible';
 
-			if(playerTime==0){
+			if(cont==9){
+				setTimeout(()=>{
+					alert("NÃO HOUVE VENCEDOR");
+				},500)
+			}
+			else if(playerTime==0){
 
 				setTimeout(()=>{
 					alert("JOGADOR "+"("+j1+")"+" VENCEU A PARTIDA!")
