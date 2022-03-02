@@ -105,3 +105,32 @@
 
 		n = localStorage.getItem('link')
 		console.log(n)
+
+
+
+		function gravaj1(element){
+				let name = element.value;
+				
+				localStorage.setItem("j1",name)
+		}
+
+		function gravaj2(element){
+				let name = element.value;
+				
+				localStorage.setItem("j2",name)
+		}
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+

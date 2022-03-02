@@ -1,8 +1,15 @@
 n1 = localStorage.getItem('name1')
 n2 = localStorage.getItem('name2')
 
+j1 = localStorage.getItem('j1').toUpperCase()
+j2 = localStorage.getItem('j2').toUpperCase()
+
+
+
 		console.log(n1)
 		console.log(n2)
+
+		
 
 var jogador1 = n1
 var jogador2 = n2
@@ -20,6 +27,7 @@ function handleClick(event){
 	let square = event.target;
 	let position = square.id;
 
+
 	
 	if(handMove(position)){
 
@@ -28,7 +36,20 @@ function handleClick(event){
 
 			telaGameOver.style.visibility = 'visible';
 
-		},50);
+			if(playerTime==0){
+
+				setTimeout(()=>{
+					alert("JOGADOR "+"("+j1+")"+" VENCEU A PARTIDA!")
+				},500)
+			}
+
+			else{
+				setTimeout(()=>{
+					alert("JOGADOR "+"("+j2+")"+" VENCEU A PARTIDA!")
+				},500)
+			}
+
+		},250);
 		
 	}
 

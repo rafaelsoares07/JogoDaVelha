@@ -3,10 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'FontePoke';
+	
 }
 @font-face{
 	font-family:'FontePoke';
-	src: url('../GrinchedRegular.otf');
+	src: url('../fonts/GrinchedRegular.otf');
 }
 button{
 	width: 85px;
@@ -73,12 +74,16 @@ main{
 	border: 1px solid black;
 	display: inline-block;
 	background-color: yellow;
+	position: relative;
 
 
 }
 
 .ajuste-tabuleiro{
+
 	position: absolute;
+
+
 }
 
 .stage img{

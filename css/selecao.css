@@ -3,21 +3,31 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	
 	font-family: 'FontePoke';
 }
 @font-face{
 	font-family:'FontePoke';
-	src: url('GrinchedRegular.otf');
+	src: url('../fonts/GrinchedRegular.otf');
 }
 
 body{
 	background-color: slateblue;
 }
+
+input{
+	font-size: 1.5em;
+	width: 210px;
+	height: 35px;
+	border-radius: 45px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.7);
+	margin-top: 5px;
+	text-align: center;
+}
 #selecao-player{
 	text-align: center;
 	width: 70%;
-	
 	margin: auto;
 	padding-top: 50px;
 }
@@ -29,15 +39,14 @@ body{
 	
 }
 
-#selecao-player img:hover{
+/*#selecao-player img:hover{
 	background-color: yellow;
-}
+}*/
 
 
 #iniciar{
 	text-align: center;
-
-	padding: 10px;
+	padding: 5px;
 	border-radius: 15px;
 	font-size: 35px;
 	background-color: yellow;
@@ -48,3 +57,12 @@ body{
 }
 
 
+.selecionado{
+	background-color: yellow;
+}
+
+.excluido-selecao{
+	filter: blur(2px);
+	background-color: grey;
+	pointer-events: none;
+}

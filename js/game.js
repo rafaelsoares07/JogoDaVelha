@@ -3,10 +3,12 @@ let board = ['','','','','','','','','',]
 let playerTime= 0
 let symbols = ['o','x']
 let gameOver = false;
-
+let cont = 0
 
 
 function handMove(position){
+
+	cont++;
 
 	if(gameOver){
 		return;
@@ -24,8 +26,12 @@ function handMove(position){
 
 		gameOver = isWin();
 
+		if(cont==9){
+			gameOver=true
+		}
+	
 
-		if(gameOver==false){
+		else if(gameOver==false){
 			if(playerTime == 0){
 			playerTime = 1;
 		}
@@ -36,6 +42,8 @@ function handMove(position){
 		}
 		
 	}
+
+
 	
 return gameOver;
 	
@@ -64,6 +72,8 @@ function isWin(){
 		if(board[pos1]==board[pos2]&&board[pos1]==board[pos3]&&board[pos1]!=0){
 			return true;
 		}
+
+	
 
 	}
 
